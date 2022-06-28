@@ -12,6 +12,11 @@ def createApp():
     from . import pet
     app.register_blueprint(pet.bp)
 
+    from . import facts
+    app.register_blueprint(facts.bp)
+
+    
+
     #return the app
         
 

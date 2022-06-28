@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetFaxs</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Facts Submit page</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -14,20 +13,17 @@
     />
   </head>
   <body>
-    <div class="text-center">
-      <h1>Welcome to Fn Pet Facts</h1>
-      {% for pet in pets %}
-      <h2>{{ pet.pet_name }}</h2>
-      <div class="text-center">
-        <img
-          class="rounded img-thumbnail img-fluid"
-          src="{{ pet.pet_photo }}"
-          alt="soemtext"
-        />
-
-        <a href="/pets/{{ pet.pet_id }}">More info ⟩</a>
+    <div>
+      <h1>Submit facts</h1>
+      <div>
+        <form>
+          <label for="submitter"><h3>Name of Fact</h3></label>
+          <input placeholder="PetFax" name="submitter" type="text" />
+          <br />
+          <label for="facts"><h3>Descibe fact here</h3></label>
+          <input type="submit" value="Submit the Facts" />
+        </form>
       </div>
-      {% endfor %}
     </div>
     <!-- Bootstrap JavaScript -->
     <script
