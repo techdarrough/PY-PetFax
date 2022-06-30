@@ -1,4 +1,3 @@
-from atexit import register
 from flask import Flask
 
 def createApp():
