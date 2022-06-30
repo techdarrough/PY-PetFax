@@ -17,7 +17,8 @@
     <div class="text-center">
       <h1>Welcome to Fn Pet Facts</h1>
       {% for pet in pets %}
-      <h2>{{ pet.pet_name }}</h2>
+      <div><h2>{{ pet.pet_name }}</h2></div>
+      
       <div class="text-center">
         <img
           class="rounded img-thumbnail img-fluid"
@@ -25,8 +26,10 @@
           alt="soemtext"
         />
 
-        <a href="/pets/{{ pet.pet_id }}">More info ⟩</a>
+        
       </div>
+      <div><a href="/pets/{{ pet.pet_id }}">More info ⟩</a></div>
+      
       {% endfor %}
     </div>
     <!-- Bootstrap JavaScript -->
