@@ -17,7 +17,16 @@
     />
   </head>
   <body>
-    <div><h1>Facts Index.html</h1></div>
+    <div class="text-center">
+      <h1>Submitted Facts</h1>
+      <div>
+        {% for fact in facts %}
+            <h4>Submitter {{fact.submitter}}</h4>
+            {{fact.fact}}
+        {% endfor %}
+      </div>
+    </div>
+
     <!-- Bootstrap JavaScript -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

@@ -17,16 +17,18 @@
     />
   </head>
   <body>
-    <div>
+    <div class="text-center">
       <h1>Submit facts</h1>
       <div>
         <form action="/facts" method="POST">
           <div class="form-group">
-            <label for="submitter"><h3>Name of Fact</h3></label>
-            <input placeholder="PetFax" name="submitter" type="text" />
-            <label for="facts"><h3>Descibe fact here</h3></label>
+            <label for="submitter"><h3>Name of Fact:</h3></label>
             <input placeholder="PetFax" name="submitter" type="text" />
             <br />
+            
+            <label for="fact"></label>
+            <textarea name="fact" class="form-control .bg-dark" placeholder="Leave a fact here" id="floatingTextarea"></textarea>
+            <br/>
             
             <input type="submit" value="Submit the Facts" />
           </div>
